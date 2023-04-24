@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047D568229F3CD5600DD1CB6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D568129F3CD5600DD1CB6 /* DetailViewController.swift */; };
+		047D568829F3DB3300DD1CB6 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D568729F3DB3300DD1CB6 /* AppUtility.swift */; };
+		047D568A29F3DB7200DD1CB6 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D568929F3DB7200DD1CB6 /* UIApplication.swift */; };
+		047D568C29F3DB7900DD1CB6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D568B29F3DB7900DD1CB6 /* UIColor.swift */; };
+		047D568E29F3DB9600DD1CB6 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D568D29F3DB9600DD1CB6 /* UIImage+Gif.swift */; };
+		047D569029F3DB9E00DD1CB6 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D568F29F3DB9E00DD1CB6 /* UIView+Constraints.swift */; };
+		047D56B529F3E5F000DD1CB6 /* MBProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 047D56B429F3E5F000DD1CB6 /* MBProgressHUD */; };
+		94E8D1EE6989929BE0B4033E /* libPods-RentingLand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F121BD1DB32DC72E3BBB385 /* libPods-RentingLand.a */; };
+		A30D2EAD29F63FE30060C921 /* PageControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D2EAB29F63FE30060C921 /* PageControllerCollectionViewCell.swift */; };
+		A30D2EAE29F63FE30060C921 /* PageControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30D2EAC29F63FE30060C921 /* PageControllerCollectionViewCell.xib */; };
+		A30D2EB129F6512C0060C921 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D2EAF29F6512C0060C921 /* ReviewTableViewCell.swift */; };
+		A30D2EB229F6512C0060C921 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30D2EB029F6512C0060C921 /* ReviewTableViewCell.xib */; };
+		A31572AF29EFB4040008756E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572AE29EFB4040008756E /* AppDelegate.swift */; };
+		A31572B129EFB4040008756E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572B029EFB4040008756E /* SceneDelegate.swift */; };
+		A31572B629EFB4040008756E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31572B429EFB4040008756E /* Main.storyboard */; };
+		A31572B829EFB4060008756E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31572B729EFB4060008756E /* Assets.xcassets */; };
+		A31572BB29EFB4060008756E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31572B929EFB4060008756E /* LaunchScreen.storyboard */; };
+		A31572C629EFB4070008756E /* RentingLandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572C529EFB4070008756E /* RentingLandTests.swift */; };
+		A31572D029EFB4070008756E /* RentingLandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572CF29EFB4070008756E /* RentingLandUITests.swift */; };
+		A31572D229EFB4070008756E /* RentingLandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572D129EFB4070008756E /* RentingLandUITestsLaunchTests.swift */; };
+		A31572E029EFC2370008756E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572DF29EFC2370008756E /* LoginViewController.swift */; };
+		A36DCDE129F116BA0055AF00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDE029F116BA0055AF00 /* HomeViewController.swift */; };
+		A36DCDE829F119150055AF00 /* ExploreLandsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDE629F119150055AF00 /* ExploreLandsCollectionViewCell.swift */; };
+		A36DCDE929F119150055AF00 /* ExploreLandsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36DCDE729F119150055AF00 /* ExploreLandsCollectionViewCell.xib */; };
+		A36DCDEC29F11AF30055AF00 /* LandForRentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDEA29F11AF30055AF00 /* LandForRentCollectionViewCell.swift */; };
+		A36DCDED29F11AF30055AF00 /* LandForRentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36DCDEB29F11AF30055AF00 /* LandForRentCollectionViewCell.xib */; };
+		A36DCDF029F11D490055AF00 /* ExploreLandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDEE29F11D490055AF00 /* ExploreLandTableViewCell.swift */; };
+		A36DCDF129F11D490055AF00 /* ExploreLandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36DCDEF29F11D490055AF00 /* ExploreLandTableViewCell.xib */; };
+		A36DCDF429F11D6F0055AF00 /* LandForRentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDF229F11D6F0055AF00 /* LandForRentTableViewCell.swift */; };
+		A36DCDF529F11D6F0055AF00 /* LandForRentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36DCDF329F11D6F0055AF00 /* LandForRentTableViewCell.xib */; };
+		A36DCDF929F13F080055AF00 /* CostomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDF729F13F080055AF00 /* CostomHeaderView.swift */; };
+		A36DCDFA29F13F080055AF00 /* CostomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36DCDF829F13F080055AF00 /* CostomHeaderView.xib */; };
+		A39E683B29EFEE880025B058 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E683A29EFEE880025B058 /* SignUpViewController.swift */; };
+		A39E683D29F00B660025B058 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E683C29F00B660025B058 /* OtpViewController.swift */; };
+		A3B3A36129F6820600A8C1ED /* ExtentionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3A36029F6820600A8C1ED /* ExtentionController.swift */; };
+		A3B3A36529F68D5400A8C1ED /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3A36429F68D5400A8C1ED /* SearchLocationViewController.swift */; };
+		A3B3A36729F692E200A8C1ED /* RentAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B3A36629F692E100A8C1ED /* RentAgreementViewController.swift */; };
+		A3FE604929F255C400CE42CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE604829F255C400CE42CC /* TabBarViewController.swift */; };
+		A3FE604C29F25A3600CE42CC /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE604A29F25A3600CE42CC /* WishlistTableViewCell.swift */; };
+		A3FE604D29F25A3600CE42CC /* WishlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FE604B29F25A3600CE42CC /* WishlistTableViewCell.xib */; };
+		A3FE605129F2639900CE42CC /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE605029F2639900CE42CC /* WishlistViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A31572C229EFB4070008756E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A31572A329EFB4040008756E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A31572AA29EFB4040008756E;
+			remoteInfo = RentingLand;
+		};
+		A31572CC29EFB4070008756E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A31572A329EFB4040008756E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A31572AA29EFB4040008756E;
+			remoteInfo = RentingLand;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047D568129F3CD5600DD1CB6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		047D568729F3DB3300DD1CB6 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		047D568929F3DB7200DD1CB6 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		047D568B29F3DB7900DD1CB6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		047D568D29F3DB9600DD1CB6 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		047D568F29F3DB9E00DD1CB6 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		047D569629F3E5E100DD1CB6 /* IQKeyboardManager+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Debug.swift"; sourceTree = "<group>"; };
+		047D569729F3E5E100DD1CB6 /* IQKeyboardManager+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Position.swift"; sourceTree = "<group>"; };
+		047D569829F3E5E100DD1CB6 /* IQKeyboardManager+Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Toolbar.swift"; sourceTree = "<group>"; };
+		047D569929F3E5E100DD1CB6 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
+		047D569A29F3E5E100DD1CB6 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
+		047D569B29F3E5E200DD1CB6 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		047D569C29F3E5E200DD1CB6 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		047D569E29F3E5E200DD1CB6 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		047D569F29F3E5E200DD1CB6 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		047D56A129F3E5E200DD1CB6 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		047D56A229F3E5E200DD1CB6 /* IQInvocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		047D56A329F3E5E200DD1CB6 /* IQToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		047D56A429F3E5E200DD1CB6 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		047D56A529F3E5E200DD1CB6 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		047D56A629F3E5E200DD1CB6 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		047D56A829F3E5E200DD1CB6 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		047D56A929F3E5E200DD1CB6 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		047D56AA29F3E5E200DD1CB6 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		047D56AB29F3E5E200DD1CB6 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		047D56AC29F3E5E200DD1CB6 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		047D56AD29F3E5E200DD1CB6 /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
+		047D56AF29F3E5E200DD1CB6 /* IQTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		047D56B029F3E5E200DD1CB6 /* IQKeyboardManager+UIKeyboardNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UIKeyboardNotification.swift"; sourceTree = "<group>"; };
+		047D56B129F3E5E200DD1CB6 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		047D56B329F3E5E200DD1CB6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		047D56B429F3E5F000DD1CB6 /* MBProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MBProgressHUD; path = "../../../Desktop/vibemusic_ios /Pods/MBProgressHUD"; sourceTree = "<group>"; };
+		047D56BD29F3E6AE00DD1CB6 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		047D56BF29F3E6AE00DD1CB6 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		047D56C029F3E6AE00DD1CB6 /* OTPFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTPFieldView.h; sourceTree = "<group>"; };
+		047D56C129F3E6AE00DD1CB6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1F121BD1DB32DC72E3BBB385 /* libPods-RentingLand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RentingLand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4CD4EF6606DD45A5B28F4F /* Pods-RentingLand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentingLand.debug.xcconfig"; path = "Target Support Files/Pods-RentingLand/Pods-RentingLand.debug.xcconfig"; sourceTree = "<group>"; };
+		A30D2EAB29F63FE30060C921 /* PageControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControllerCollectionViewCell.swift; sourceTree = "<group>"; };
+		A30D2EAC29F63FE30060C921 /* PageControllerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageControllerCollectionViewCell.xib; sourceTree = "<group>"; };
+		A30D2EAF29F6512C0060C921 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		A30D2EB029F6512C0060C921 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		A31572AB29EFB4040008756E /* RentingLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentingLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31572AE29EFB4040008756E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A31572B029EFB4040008756E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A31572B529EFB4040008756E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A31572B729EFB4060008756E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A31572BA29EFB4060008756E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A31572BC29EFB4060008756E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31572C129EFB4070008756E /* RentingLandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentingLandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31572C529EFB4070008756E /* RentingLandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentingLandTests.swift; sourceTree = "<group>"; };
+		A31572CB29EFB4070008756E /* RentingLandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentingLandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31572CF29EFB4070008756E /* RentingLandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentingLandUITests.swift; sourceTree = "<group>"; };
+		A31572D129EFB4070008756E /* RentingLandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentingLandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A31572DF29EFC2370008756E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A36DCDE029F116BA0055AF00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A36DCDE629F119150055AF00 /* ExploreLandsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreLandsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A36DCDE729F119150055AF00 /* ExploreLandsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreLandsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A36DCDEA29F11AF30055AF00 /* LandForRentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandForRentCollectionViewCell.swift; sourceTree = "<group>"; };
+		A36DCDEB29F11AF30055AF00 /* LandForRentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandForRentCollectionViewCell.xib; sourceTree = "<group>"; };
+		A36DCDEE29F11D490055AF00 /* ExploreLandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreLandTableViewCell.swift; sourceTree = "<group>"; };
+		A36DCDEF29F11D490055AF00 /* ExploreLandTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreLandTableViewCell.xib; sourceTree = "<group>"; };
+		A36DCDF229F11D6F0055AF00 /* LandForRentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandForRentTableViewCell.swift; sourceTree = "<group>"; };
+		A36DCDF329F11D6F0055AF00 /* LandForRentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandForRentTableViewCell.xib; sourceTree = "<group>"; };
+		A36DCDF729F13F080055AF00 /* CostomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostomHeaderView.swift; sourceTree = "<group>"; };
+		A36DCDF829F13F080055AF00 /* CostomHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CostomHeaderView.xib; sourceTree = "<group>"; };
+		A39E683A29EFEE880025B058 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A39E683C29F00B660025B058 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		A3B3A36029F6820600A8C1ED /* ExtentionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionController.swift; sourceTree = "<group>"; };
+		A3B3A36429F68D5400A8C1ED /* SearchLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
+		A3B3A36629F692E100A8C1ED /* RentAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentAgreementViewController.swift; sourceTree = "<group>"; };
+		A3FE604829F255C400CE42CC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A3FE604A29F25A3600CE42CC /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
+		A3FE604B29F25A3600CE42CC /* WishlistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishlistTableViewCell.xib; sourceTree = "<group>"; };
+		A3FE605029F2639900CE42CC /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		E4E366AF77A1D559D93C1509 /* Pods-RentingLand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentingLand.release.xcconfig"; path = "Target Support Files/Pods-RentingLand/Pods-RentingLand.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A31572A829EFB4040008756E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E8D1EE6989929BE0B4033E /* libPods-RentingLand.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31572BE29EFB4070008756E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31572C829EFB4070008756E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047D569129F3DBA500DD1CB6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				047D568B29F3DB7900DD1CB6 /* UIColor.swift */,
+				047D568729F3DB3300DD1CB6 /* AppUtility.swift */,
+				047D568F29F3DB9E00DD1CB6 /* UIView+Constraints.swift */,
+				047D568929F3DB7200DD1CB6 /* UIApplication.swift */,
+				047D568D29F3DB9600DD1CB6 /* UIImage+Gif.swift */,
+				A31572B029EFB4040008756E /* SceneDelegate.swift */,
+				A31572AE29EFB4040008756E /* AppDelegate.swift */,
+				A3B3A36029F6820600A8C1ED /* ExtentionController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		047D569429F3E5E100DD1CB6 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				047D569529F3E5E100DD1CB6 /* IQKeyboardManagerSwift */,
+				047D56B129F3E5E200DD1CB6 /* LICENSE.md */,
+				047D56B229F3E5E200DD1CB6 /* IQKeyboardManager */,
+				047D56B329F3E5E200DD1CB6 /* README.md */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		047D569529F3E5E100DD1CB6 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				047D569629F3E5E100DD1CB6 /* IQKeyboardManager+Debug.swift */,
+				047D569729F3E5E100DD1CB6 /* IQKeyboardManager+Position.swift */,
+				047D569829F3E5E100DD1CB6 /* IQKeyboardManager+Toolbar.swift */,
+				047D569929F3E5E100DD1CB6 /* IQKeyboardManager+UITextFieldViewNotification.swift */,
+				047D569A29F3E5E100DD1CB6 /* IQKeyboardManager+Internal.swift */,
+				047D569B29F3E5E200DD1CB6 /* IQKeyboardReturnKeyHandler.swift */,
+				047D569C29F3E5E200DD1CB6 /* IQKeyboardManager.swift */,
+				047D569D29F3E5E200DD1CB6 /* Constants */,
+				047D56A029F3E5E200DD1CB6 /* IQToolbar */,
+				047D56A729F3E5E200DD1CB6 /* Categories */,
+				047D56AD29F3E5E200DD1CB6 /* IQKeyboardManager+OrientationNotification.swift */,
+				047D56AE29F3E5E200DD1CB6 /* IQTextView */,
+				047D56B029F3E5E200DD1CB6 /* IQKeyboardManager+UIKeyboardNotification.swift */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		047D569D29F3E5E200DD1CB6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				047D569E29F3E5E200DD1CB6 /* IQKeyboardManagerConstantsInternal.swift */,
+				047D569F29F3E5E200DD1CB6 /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		047D56A029F3E5E200DD1CB6 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				047D56A129F3E5E200DD1CB6 /* IQTitleBarButtonItem.swift */,
+				047D56A229F3E5E200DD1CB6 /* IQInvocation.swift */,
+				047D56A329F3E5E200DD1CB6 /* IQToolbar.swift */,
+				047D56A429F3E5E200DD1CB6 /* IQBarButtonItem.swift */,
+				047D56A529F3E5E200DD1CB6 /* IQPreviousNextView.swift */,
+				047D56A629F3E5E200DD1CB6 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		047D56A729F3E5E200DD1CB6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				047D56A829F3E5E200DD1CB6 /* IQNSArray+Sort.swift */,
+				047D56A929F3E5E200DD1CB6 /* IQUIScrollView+Additions.swift */,
+				047D56AA29F3E5E200DD1CB6 /* IQUIViewController+Additions.swift */,
+				047D56AB29F3E5E200DD1CB6 /* IQUITextFieldView+Additions.swift */,
+				047D56AC29F3E5E200DD1CB6 /* IQUIView+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		047D56AE29F3E5E200DD1CB6 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				047D56AF29F3E5E200DD1CB6 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		047D56B229F3E5E200DD1CB6 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		047D56BC29F3E6AE00DD1CB6 /* OTPFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				047D56BD29F3E6AE00DD1CB6 /* LICENSE */,
+				047D56BE29F3E6AE00DD1CB6 /* OTPFieldView */,
+				047D56C129F3E6AE00DD1CB6 /* README.md */,
+			);
+			path = OTPFieldView;
+			sourceTree = "<group>";
+		};
+		047D56BE29F3E6AE00DD1CB6 /* OTPFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				047D56BF29F3E6AE00DD1CB6 /* OTPTextField.swift */,
+				047D56C029F3E6AE00DD1CB6 /* OTPFieldView.h */,
+			);
+			path = OTPFieldView;
+			sourceTree = "<group>";
+		};
+		A31572A229EFB4040008756E = {
+			isa = PBXGroup;
+			children = (
+				A31572AD29EFB4040008756E /* RentingLand */,
+				A31572C429EFB4070008756E /* RentingLandTests */,
+				A31572CE29EFB4070008756E /* RentingLandUITests */,
+				A31572AC29EFB4040008756E /* Products */,
+				FDC47457028D5EE09681C7B7 /* Pods */,
+				F3334D3046E7803EE14C32A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A31572AC29EFB4040008756E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A31572AB29EFB4040008756E /* RentingLand.app */,
+				A31572C129EFB4070008756E /* RentingLandTests.xctest */,
+				A31572CB29EFB4070008756E /* RentingLandUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A31572AD29EFB4040008756E /* RentingLand */ = {
+			isa = PBXGroup;
+			children = (
+				047D569129F3DBA500DD1CB6 /* Base */,
+				A36DCDF629F13EF10055AF00 /* Header */,
+				A36DCDE329F1178A0055AF00 /* TableViewCellFolder */,
+				A36DCDE229F117710055AF00 /* CollectionViewCellFolder */,
+				A31572DE29EFC20F0008756E /* Controller */,
+				A31572B429EFB4040008756E /* Main.storyboard */,
+				A31572B729EFB4060008756E /* Assets.xcassets */,
+				A31572B929EFB4060008756E /* LaunchScreen.storyboard */,
+				A31572BC29EFB4060008756E /* Info.plist */,
+			);
+			path = RentingLand;
+			sourceTree = "<group>";
+		};
+		A31572C429EFB4070008756E /* RentingLandTests */ = {
+			isa = PBXGroup;
+			children = (
+				A31572C529EFB4070008756E /* RentingLandTests.swift */,
+			);
+			path = RentingLandTests;
+			sourceTree = "<group>";
+		};
+		A31572CE29EFB4070008756E /* RentingLandUITests */ = {
+			isa = PBXGroup;
+			children = (
+				047D56B429F3E5F000DD1CB6 /* MBProgressHUD */,
+				047D569429F3E5E100DD1CB6 /* IQKeyboardManagerSwift */,
+				A31572CF29EFB4070008756E /* RentingLandUITests.swift */,
+				047D56BC29F3E6AE00DD1CB6 /* OTPFieldView */,
+				A31572D129EFB4070008756E /* RentingLandUITestsLaunchTests.swift */,
+			);
+			path = RentingLandUITests;
+			sourceTree = "<group>";
+		};
+		A31572DE29EFC20F0008756E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A31572DF29EFC2370008756E /* LoginViewController.swift */,
+				A39E683A29EFEE880025B058 /* SignUpViewController.swift */,
+				A39E683C29F00B660025B058 /* OtpViewController.swift */,
+				A36DCDE029F116BA0055AF00 /* HomeViewController.swift */,
+				A3FE604829F255C400CE42CC /* TabBarViewController.swift */,
+				A3FE605029F2639900CE42CC /* WishlistViewController.swift */,
+				047D568129F3CD5600DD1CB6 /* DetailViewController.swift */,
+				A3B3A36429F68D5400A8C1ED /* SearchLocationViewController.swift */,
+				A3B3A36629F692E100A8C1ED /* RentAgreementViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A36DCDE229F117710055AF00 /* CollectionViewCellFolder */ = {
+			isa = PBXGroup;
+			children = (
+				A36DCDE629F119150055AF00 /* ExploreLandsCollectionViewCell.swift */,
+				A36DCDE729F119150055AF00 /* ExploreLandsCollectionViewCell.xib */,
+				A36DCDEA29F11AF30055AF00 /* LandForRentCollectionViewCell.swift */,
+				A36DCDEB29F11AF30055AF00 /* LandForRentCollectionViewCell.xib */,
+				A30D2EAB29F63FE30060C921 /* PageControllerCollectionViewCell.swift */,
+				A30D2EAC29F63FE30060C921 /* PageControllerCollectionViewCell.xib */,
+			);
+			path = CollectionViewCellFolder;
+			sourceTree = "<group>";
+		};
+		A36DCDE329F1178A0055AF00 /* TableViewCellFolder */ = {
+			isa = PBXGroup;
+			children = (
+				A36DCDEE29F11D490055AF00 /* ExploreLandTableViewCell.swift */,
+				A36DCDEF29F11D490055AF00 /* ExploreLandTableViewCell.xib */,
+				A36DCDF229F11D6F0055AF00 /* LandForRentTableViewCell.swift */,
+				A36DCDF329F11D6F0055AF00 /* LandForRentTableViewCell.xib */,
+				A3FE604A29F25A3600CE42CC /* WishlistTableViewCell.swift */,
+				A3FE604B29F25A3600CE42CC /* WishlistTableViewCell.xib */,
+				A30D2EAF29F6512C0060C921 /* ReviewTableViewCell.swift */,
+				A30D2EB029F6512C0060C921 /* ReviewTableViewCell.xib */,
+			);
+			path = TableViewCellFolder;
+			sourceTree = "<group>";
+		};
+		A36DCDF629F13EF10055AF00 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				A36DCDF729F13F080055AF00 /* CostomHeaderView.swift */,
+				A36DCDF829F13F080055AF00 /* CostomHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F3334D3046E7803EE14C32A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F121BD1DB32DC72E3BBB385 /* libPods-RentingLand.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDC47457028D5EE09681C7B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C4CD4EF6606DD45A5B28F4F /* Pods-RentingLand.debug.xcconfig */,
+				E4E366AF77A1D559D93C1509 /* Pods-RentingLand.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A31572AA29EFB4040008756E /* RentingLand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31572D529EFB4070008756E /* Build configuration list for PBXNativeTarget "RentingLand" */;
+			buildPhases = (
+				6300FF9CC3474DD168B3456C /* [CP] Check Pods Manifest.lock */,
+				A31572A729EFB4040008756E /* Sources */,
+				A31572A829EFB4040008756E /* Frameworks */,
+				A31572A929EFB4040008756E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RentingLand;
+			productName = RentingLand;
+			productReference = A31572AB29EFB4040008756E /* RentingLand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A31572C029EFB4070008756E /* RentingLandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31572D829EFB4070008756E /* Build configuration list for PBXNativeTarget "RentingLandTests" */;
+			buildPhases = (
+				A31572BD29EFB4070008756E /* Sources */,
+				A31572BE29EFB4070008756E /* Frameworks */,
+				A31572BF29EFB4070008756E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A31572C329EFB4070008756E /* PBXTargetDependency */,
+			);
+			name = RentingLandTests;
+			productName = RentingLandTests;
+			productReference = A31572C129EFB4070008756E /* RentingLandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A31572CA29EFB4070008756E /* RentingLandUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31572DB29EFB4070008756E /* Build configuration list for PBXNativeTarget "RentingLandUITests" */;
+			buildPhases = (
+				A31572C729EFB4070008756E /* Sources */,
+				A31572C829EFB4070008756E /* Frameworks */,
+				A31572C929EFB4070008756E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A31572CD29EFB4070008756E /* PBXTargetDependency */,
+			);
+			name = RentingLandUITests;
+			productName = RentingLandUITests;
+			productReference = A31572CB29EFB4070008756E /* RentingLandUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A31572A329EFB4040008756E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A31572AA29EFB4040008756E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A31572C029EFB4070008756E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A31572AA29EFB4040008756E;
+					};
+					A31572CA29EFB4070008756E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A31572AA29EFB4040008756E;
+					};
+				};
+			};
+			buildConfigurationList = A31572A629EFB4040008756E /* Build configuration list for PBXProject "RentingLand" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A31572A229EFB4040008756E;
+			productRefGroup = A31572AC29EFB4040008756E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A31572AA29EFB4040008756E /* RentingLand */,
+				A31572C029EFB4070008756E /* RentingLandTests */,
+				A31572CA29EFB4070008756E /* RentingLandUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A31572A929EFB4040008756E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31572BB29EFB4060008756E /* LaunchScreen.storyboard in Resources */,
+				A30D2EAE29F63FE30060C921 /* PageControllerCollectionViewCell.xib in Resources */,
+				A31572B829EFB4060008756E /* Assets.xcassets in Resources */,
+				A31572B629EFB4040008756E /* Main.storyboard in Resources */,
+				A36DCDED29F11AF30055AF00 /* LandForRentCollectionViewCell.xib in Resources */,
+				A36DCDF529F11D6F0055AF00 /* LandForRentTableViewCell.xib in Resources */,
+				A36DCDF129F11D490055AF00 /* ExploreLandTableViewCell.xib in Resources */,
+				A3FE604D29F25A3600CE42CC /* WishlistTableViewCell.xib in Resources */,
+				A36DCDFA29F13F080055AF00 /* CostomHeaderView.xib in Resources */,
+				A36DCDE929F119150055AF00 /* ExploreLandsCollectionViewCell.xib in Resources */,
+				A30D2EB229F6512C0060C921 /* ReviewTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31572BF29EFB4070008756E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31572C929EFB4070008756E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047D56B529F3E5F000DD1CB6 /* MBProgressHUD in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6300FF9CC3474DD168B3456C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RentingLand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A31572A729EFB4040008756E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047D568E29F3DB9600DD1CB6 /* UIImage+Gif.swift in Sources */,
+				047D568829F3DB3300DD1CB6 /* AppUtility.swift in Sources */,
+				A36DCDF029F11D490055AF00 /* ExploreLandTableViewCell.swift in Sources */,
+				A36DCDF429F11D6F0055AF00 /* LandForRentTableViewCell.swift in Sources */,
+				A36DCDEC29F11AF30055AF00 /* LandForRentCollectionViewCell.swift in Sources */,
+				A31572E029EFC2370008756E /* LoginViewController.swift in Sources */,
+				A36DCDE829F119150055AF00 /* ExploreLandsCollectionViewCell.swift in Sources */,
+				A30D2EAD29F63FE30060C921 /* PageControllerCollectionViewCell.swift in Sources */,
+				047D569029F3DB9E00DD1CB6 /* UIView+Constraints.swift in Sources */,
+				A3FE604C29F25A3600CE42CC /* WishlistTableViewCell.swift in Sources */,
+				047D568229F3CD5600DD1CB6 /* DetailViewController.swift in Sources */,
+				A3FE605129F2639900CE42CC /* WishlistViewController.swift in Sources */,
+				A36DCDF929F13F080055AF00 /* CostomHeaderView.swift in Sources */,
+				A36DCDE129F116BA0055AF00 /* HomeViewController.swift in Sources */,
+				047D568A29F3DB7200DD1CB6 /* UIApplication.swift in Sources */,
+				A3B3A36529F68D5400A8C1ED /* SearchLocationViewController.swift in Sources */,
+				A3B3A36729F692E200A8C1ED /* RentAgreementViewController.swift in Sources */,
+				A39E683D29F00B660025B058 /* OtpViewController.swift in Sources */,
+				047D568C29F3DB7900DD1CB6 /* UIColor.swift in Sources */,
+				A30D2EB129F6512C0060C921 /* ReviewTableViewCell.swift in Sources */,
+				A3B3A36129F6820600A8C1ED /* ExtentionController.swift in Sources */,
+				A31572AF29EFB4040008756E /* AppDelegate.swift in Sources */,
+				A3FE604929F255C400CE42CC /* TabBarViewController.swift in Sources */,
+				A31572B129EFB4040008756E /* SceneDelegate.swift in Sources */,
+				A39E683B29EFEE880025B058 /* SignUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31572BD29EFB4070008756E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31572C629EFB4070008756E /* RentingLandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31572C729EFB4070008756E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31572D029EFB4070008756E /* RentingLandUITests.swift in Sources */,
+				A31572D229EFB4070008756E /* RentingLandUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A31572C329EFB4070008756E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A31572AA29EFB4040008756E /* RentingLand */;
+			targetProxy = A31572C229EFB4070008756E /* PBXContainerItemProxy */;
+		};
+		A31572CD29EFB4070008756E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A31572AA29EFB4040008756E /* RentingLand */;
+			targetProxy = A31572CC29EFB4070008756E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A31572B429EFB4040008756E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A31572B529EFB4040008756E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A31572B929EFB4060008756E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A31572BA29EFB4060008756E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A31572D329EFB4070008756E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A31572D429EFB4070008756E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A31572D629EFB4070008756E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C4CD4EF6606DD45A5B28F4F /* Pods-RentingLand.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24NYW2CF7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RentingLand/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doit.-MiniPlayerDemo.RentingLand";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A31572D729EFB4070008756E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E366AF77A1D559D93C1509 /* Pods-RentingLand.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24NYW2CF7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RentingLand/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doit.-MiniPlayerDemo.RentingLand";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A31572D929EFB4070008756E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24NYW2CF7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doit.-MiniPlayerDemo.RentingLandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentingLand.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RentingLand";
+			};
+			name = Debug;
+		};
+		A31572DA29EFB4070008756E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24NYW2CF7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doit.-MiniPlayerDemo.RentingLandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentingLand.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RentingLand";
+			};
+			name = Release;
+		};
+		A31572DC29EFB4070008756E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24NYW2CF7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doit.-MiniPlayerDemo.RentingLandUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RentingLand;
+			};
+			name = Debug;
+		};
+		A31572DD29EFB4070008756E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24NYW2CF7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doit.-MiniPlayerDemo.RentingLandUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RentingLand;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A31572A629EFB4040008756E /* Build configuration list for PBXProject "RentingLand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31572D329EFB4070008756E /* Debug */,
+				A31572D429EFB4070008756E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A31572D529EFB4070008756E /* Build configuration list for PBXNativeTarget "RentingLand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31572D629EFB4070008756E /* Debug */,
+				A31572D729EFB4070008756E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A31572D829EFB4070008756E /* Build configuration list for PBXNativeTarget "RentingLandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31572D929EFB4070008756E /* Debug */,
+				A31572DA29EFB4070008756E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A31572DB29EFB4070008756E /* Build configuration list for PBXNativeTarget "RentingLandUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31572DC29EFB4070008756E /* Debug */,
+				A31572DD29EFB4070008756E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A31572A329EFB4040008756E /* Project object */;
+}

@@ -1,0 +1,6 @@
+module Pods_RentingLand {
+  umbrella header "Pods-RentingLand-umbrella.h"
+
+  export *
+  module * { export * }
+}

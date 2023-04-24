@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ExploreLandsCollectionViewCell" reuseIdentifier="ExploreLandsCollectionViewCell" id="gTV-IL-0wX" customClass="ExploreLandsCollectionViewCell" customModule="RentingLand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="111"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJB-20-np6">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="111"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exploreland" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-Tk-7um">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="111"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwZ-xY-MFQ">
+                                <rect key="frame" x="10" y="82" width="72" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2Hf-9E-JDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zHk-Tk-7um" firstAttribute="top" secondItem="fJB-20-np6" secondAttribute="top" id="1pp-KI-YLv"/>
+                            <constraint firstAttribute="trailing" secondItem="fwZ-xY-MFQ" secondAttribute="trailing" constant="10" id="6lx-gZ-j3u"/>
+                            <constraint firstAttribute="bottom" secondItem="zHk-Tk-7um" secondAttribute="bottom" id="Asg-QB-TPx"/>
+                            <constraint firstAttribute="bottom" secondItem="fwZ-xY-MFQ" secondAttribute="bottom" constant="8" id="V8C-mr-ITK"/>
+                            <constraint firstItem="zHk-Tk-7um" firstAttribute="leading" secondItem="fJB-20-np6" secondAttribute="leading" id="ue0-tv-UrE"/>
+                            <constraint firstItem="fwZ-xY-MFQ" firstAttribute="leading" secondItem="fJB-20-np6" secondAttribute="leading" constant="10" id="vfu-ls-9XH"/>
+                            <constraint firstAttribute="trailing" secondItem="zHk-Tk-7um" secondAttribute="trailing" id="waY-tx-5x1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fJB-20-np6" secondAttribute="bottom" id="0QA-xl-UnE"/>
+                <constraint firstItem="fJB-20-np6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WVF-nr-hG6"/>
+                <constraint firstItem="fJB-20-np6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gga-QN-dk2"/>
+                <constraint firstAttribute="trailing" secondItem="fJB-20-np6" secondAttribute="trailing" id="uAI-Gw-mJh"/>
+            </constraints>
+            <size key="customSize" width="92" height="111"/>
+            <connections>
+                <outlet property="exploreLandImage" destination="zHk-Tk-7um" id="blQ-yK-aFS"/>
+                <outlet property="landTextLabel" destination="fwZ-xY-MFQ" id="Zmq-0W-uKo"/>
+            </connections>
+            <point key="canvasLocation" x="161.83206106870227" y="10.211267605633804"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="exploreland" width="91" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

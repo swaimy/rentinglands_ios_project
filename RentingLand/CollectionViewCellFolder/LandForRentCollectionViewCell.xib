@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LandForRentCollectionViewCell" reuseIdentifier="LandForRentCollectionViewCell" id="gTV-IL-0wX" customClass="LandForRentCollectionViewCell" customModule="RentingLand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4Q-1g-0Sh">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="300"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="236" id="v1j-2C-HNr"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rentLand" translatesAutoresizingMaskIntoConstraints="NO" id="FEX-uc-wy1">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="NM5-bH-Ofa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Acres plot is available for contract farming" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bP-XG-QpV">
+                        <rect key="frame" x="12" y="191" width="212" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address: 813 Howard Street Oswego " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-zN-PqA">
+                        <rect key="frame" x="12" y="230" width="212" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Xi-1T-wWN">
+                        <rect key="frame" x="79" y="258.5" width="78" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="78" id="a9F-vT-jKc"/>
+                            <constraint firstAttribute="height" constant="16" id="mTD-WI-tu4"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="View Details">
+                                    <attributes>
+                                        <color key="NSColor" red="0.13725490200000001" green="0.23529411759999999" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="system"/>
+                                        <integer key="NSUnderline" value="1"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARF-4W-fbo">
+                        <rect key="frame" x="192" y="12" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="hmz-VO-qtP"/>
+                            <constraint firstAttribute="height" constant="32" id="tzs-lb-yBJ"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="like">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rateBack" translatesAutoresizingMaskIntoConstraints="NO" id="7sa-0E-Ihs">
+                        <rect key="frame" x="0.0" y="152" width="115" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Ebb-Sx-Uy6"/>
+                            <constraint firstAttribute="width" constant="115" id="xf2-Q3-KUw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$9999.00/month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgI-0O-RUs">
+                        <rect key="frame" x="10" y="153" width="113" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1uP-Nc-hFO"/>
+                            <constraint firstAttribute="width" constant="113" id="muE-20-lvf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.13725490200000001" green="0.23529411759999999" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aSf-zN-PqA" secondAttribute="trailing" constant="12" id="36p-EV-nY5"/>
+                <constraint firstItem="2bP-XG-QpV" firstAttribute="top" secondItem="FEX-uc-wy1" secondAttribute="bottom" constant="11" id="4SA-vS-jRS"/>
+                <constraint firstItem="7sa-0E-Ihs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7Fv-yL-3or"/>
+                <constraint firstAttribute="trailing" secondItem="ARF-4W-fbo" secondAttribute="trailing" constant="12" id="8W6-D1-KbA"/>
+                <constraint firstAttribute="bottom" secondItem="j4Q-1g-0Sh" secondAttribute="bottom" id="DRv-ZT-1Ed"/>
+                <constraint firstItem="7Xi-1T-wWN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MkW-ik-aXm"/>
+                <constraint firstItem="aSf-zN-PqA" firstAttribute="top" secondItem="2bP-XG-QpV" secondAttribute="bottom" constant="3" id="NXU-S7-i3e"/>
+                <constraint firstItem="7Xi-1T-wWN" firstAttribute="top" secondItem="aSf-zN-PqA" secondAttribute="bottom" constant="15" id="QRU-T9-iib"/>
+                <constraint firstAttribute="trailing" secondItem="2bP-XG-QpV" secondAttribute="trailing" constant="12" id="Trc-Hq-NAD"/>
+                <constraint firstItem="FgI-0O-RUs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="WdV-0r-8Ps"/>
+                <constraint firstItem="FEX-uc-wy1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YXl-Vm-F6M"/>
+                <constraint firstItem="2bP-XG-QpV" firstAttribute="top" secondItem="FgI-0O-RUs" secondAttribute="bottom" constant="17" id="Yfg-pv-G1T"/>
+                <constraint firstAttribute="trailing" secondItem="FEX-uc-wy1" secondAttribute="trailing" id="eMu-QQ-d30"/>
+                <constraint firstItem="2bP-XG-QpV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="ftO-8v-HhS"/>
+                <constraint firstItem="ARF-4W-fbo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="gv6-JJ-gCG"/>
+                <constraint firstItem="2bP-XG-QpV" firstAttribute="top" secondItem="7sa-0E-Ihs" secondAttribute="bottom" constant="11" id="i41-Bg-nTt"/>
+                <constraint firstItem="j4Q-1g-0Sh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iXh-8M-mTf"/>
+                <constraint firstItem="j4Q-1g-0Sh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oFH-nO-ecq"/>
+                <constraint firstItem="aSf-zN-PqA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="rhW-ii-HJi"/>
+                <constraint firstItem="FEX-uc-wy1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="w9U-tf-Hxi"/>
+                <constraint firstAttribute="trailing" secondItem="j4Q-1g-0Sh" secondAttribute="trailing" id="zLg-to-mzC"/>
+            </constraints>
+            <size key="customSize" width="236" height="300"/>
+            <connections>
+                <outlet property="rentLandView" destination="j4Q-1g-0Sh" id="xsd-Fi-PU6"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="-56.919642857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="like" width="30" height="30"/>
+        <image name="rateBack" width="111" height="26"/>
+        <image name="rentLand" width="230" height="176"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ExploreLandTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExploreLandTableViewCell" rowHeight="248" id="KGk-i7-Jjw" customClass="ExploreLandTableViewCell" customModule="RentingLand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="248"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="248"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xXN-M7-Npm">
+                        <rect key="frame" x="20" y="0.0" width="324" height="248"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FkV-I0-ESi">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xXN-M7-Npm" secondAttribute="trailing" id="1nv-Jd-MfS"/>
+                    <constraint firstItem="xXN-M7-Npm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="L9S-4F-21c"/>
+                    <constraint firstAttribute="bottom" secondItem="xXN-M7-Npm" secondAttribute="bottom" id="Tg1-BA-2s3"/>
+                    <constraint firstItem="xXN-M7-Npm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Z2J-3g-Fgh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="exploreLandCollectionView" destination="xXN-M7-Npm" id="kpT-Ng-Z8k"/>
+            </connections>
+            <point key="canvasLocation" x="149.61832061068702" y="60.563380281690144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
