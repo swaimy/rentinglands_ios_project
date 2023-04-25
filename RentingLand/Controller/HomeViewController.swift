@@ -12,7 +12,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var searchView: UIView!
-  
+@IBOutlet var slideMenuTableView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchView.layer.cornerRadius = 10

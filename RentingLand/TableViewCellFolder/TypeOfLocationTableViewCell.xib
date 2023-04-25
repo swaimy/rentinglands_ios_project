@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TypeOfLocationTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TypeOfLocationTableViewCell" rowHeight="151" id="KGk-i7-Jjw" customClass="TypeOfLocationTableViewCell" customModule="RentingLand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2BT-CO-eRD">
+                        <rect key="frame" x="0.0" y="46" width="387" height="68"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="p7P-Ul-fUK">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="estimatedItemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footerView" translatesAutoresizingMaskIntoConstraints="NO" id="ebb-R4-UyR">
+                        <rect key="frame" x="20" y="139" width="347" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="OsA-ua-Z1q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Plots / Lands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id2-lT-juq">
+                        <rect key="frame" x="20" y="15" width="357" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.35808729750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ebb-R4-UyR" firstAttribute="top" secondItem="2BT-CO-eRD" secondAttribute="bottom" constant="25" id="0gX-N6-rPv"/>
+                    <constraint firstItem="ebb-R4-UyR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="63h-Sg-Xyc"/>
+                    <constraint firstAttribute="trailing" secondItem="id2-lT-juq" secondAttribute="trailing" constant="10" id="7zV-Dn-oys"/>
+                    <constraint firstAttribute="trailing" secondItem="2BT-CO-eRD" secondAttribute="trailing" id="Gao-f3-dFO"/>
+                    <constraint firstItem="2BT-CO-eRD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PSg-or-pEh"/>
+                    <constraint firstAttribute="trailing" secondItem="ebb-R4-UyR" secondAttribute="trailing" constant="20" id="UxT-2O-5bt"/>
+                    <constraint firstItem="2BT-CO-eRD" firstAttribute="top" secondItem="id2-lT-juq" secondAttribute="bottom" constant="10" id="ier-1I-xhp"/>
+                    <constraint firstAttribute="bottom" secondItem="ebb-R4-UyR" secondAttribute="bottom" constant="10" id="mGR-ao-eZo"/>
+                    <constraint firstItem="id2-lT-juq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="mYR-ba-nL2"/>
+                    <constraint firstItem="id2-lT-juq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ufQ-Wi-vFN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="typeOfLandCollectionView" destination="2BT-CO-eRD" id="AsE-2F-4IL"/>
+            </connections>
+            <point key="canvasLocation" x="179.38931297709922" y="26.408450704225352"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="footerView" width="321.33334350585938" height="1.3333333730697632"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
