@@ -43,6 +43,11 @@ class LoginViewController: UIViewController,OtpBlurDelegate {
     }
     
     @IBAction func goToSignUpButton(_ sender: Any) {
+        
+      
+        
+        
+        
         let vC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController")as!SignUpViewController
         self.navigationController?.pushViewController(vC, animated: true)
       

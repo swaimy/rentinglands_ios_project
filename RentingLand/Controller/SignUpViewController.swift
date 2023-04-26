@@ -89,9 +89,9 @@ class SignUpViewController: UIViewController,OtpBlurDelegate {
     
     @IBAction func continueBtnAction(_ sender: Any) {
         forBlur()
+       
         
-        
-    }
+        }
     
 
 }

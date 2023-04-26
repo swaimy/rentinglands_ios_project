@@ -8,11 +8,11 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var searchView: UIView!
-@IBOutlet var slideMenuTableView: UIView!
+    @IBOutlet var slideMenuTableView: UIView!
     
     
     override func viewDidLoad() {
@@ -28,16 +28,27 @@ class HomeViewController: UIViewController {
         searchBar.searchTextField.leftView?.tintColor = UIColor(red: 232/255, green: 140/255, blue: 14/255, alpha: 1.0)
         searchView.layer.borderWidth = 0.5
         searchView?.layer.borderColor = UIColor.lightGray.cgColor
-         searchView.layer.cornerRadius = 15
+        searchView.layer.cornerRadius = 15
         searchView.layer.shadowOffset = .zero
-         searchView.layer.shadowOpacity = 1
-         searchView.layer.masksToBounds =  false
-          searchView.layer.cornerRadius = 15
-        
+        searchView.layer.shadowOpacity = 1
+        searchView.layer.masksToBounds =  false
+        searchView.layer.cornerRadius = 15
         
          }
     
-     }
+    
+    
+    @IBAction func slideMenuAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           let leftVC = storyboard.instantiateViewController(withIdentifier: "SlideMenuViewController") as! SlideMenuViewController
+           leftVC.modalPresentationStyle = .overFullScreen
+        leftVC.modalTransitionStyle = .crossDissolve
+           present(leftVC, animated: true, completion: nil)
+        
+        
+    }
+    
+}
 
 
 extension HomeViewController: UITableViewDelegate,UITableViewDataSource{

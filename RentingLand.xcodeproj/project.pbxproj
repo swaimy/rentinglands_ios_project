@@ -28,6 +28,13 @@
 		A31572D029EFB4070008756E /* RentingLandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572CF29EFB4070008756E /* RentingLandUITests.swift */; };
 		A31572D229EFB4070008756E /* RentingLandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572D129EFB4070008756E /* RentingLandUITestsLaunchTests.swift */; };
 		A31572E029EFC2370008756E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31572DF29EFC2370008756E /* LoginViewController.swift */; };
+		A335E34A29F8F0A200FDCA8F /* MenubarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335E34829F8F0A200FDCA8F /* MenubarHeaderView.swift */; };
+		A335E34B29F8F0A200FDCA8F /* MenubarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A335E34929F8F0A200FDCA8F /* MenubarHeaderView.xib */; };
+		A335E34E29F8F0D100FDCA8F /* MenuBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335E34C29F8F0D100FDCA8F /* MenuBarTableViewCell.swift */; };
+		A335E34F29F8F0D100FDCA8F /* MenuBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A335E34D29F8F0D100FDCA8F /* MenuBarTableViewCell.xib */; };
+		A335E35129F8F1A500FDCA8F /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335E35029F8F1A500FDCA8F /* SlideMenuViewController.swift */; };
+		A335E35329F91F5A00FDCA8F /* RentAgreementFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335E35229F91F5A00FDCA8F /* RentAgreementFormViewController.swift */; };
+		A335E35529F932A800FDCA8F /* AgreementPropertDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335E35429F932A800FDCA8F /* AgreementPropertDetailViewController.swift */; };
 		A36DCDE129F116BA0055AF00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDE029F116BA0055AF00 /* HomeViewController.swift */; };
 		A36DCDE829F119150055AF00 /* ExploreLandsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCDE629F119150055AF00 /* ExploreLandsCollectionViewCell.swift */; };
 		A36DCDE929F119150055AF00 /* ExploreLandsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36DCDE729F119150055AF00 /* ExploreLandsCollectionViewCell.xib */; };
@@ -133,6 +140,13 @@
 		A31572CF29EFB4070008756E /* RentingLandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentingLandUITests.swift; sourceTree = "<group>"; };
 		A31572D129EFB4070008756E /* RentingLandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentingLandUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A31572DF29EFC2370008756E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A335E34829F8F0A200FDCA8F /* MenubarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenubarHeaderView.swift; path = "../../../../Desktop/RentingLand 3/RentingLand/Header/MenubarHeaderView.swift"; sourceTree = "<group>"; };
+		A335E34929F8F0A200FDCA8F /* MenubarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenubarHeaderView.xib; path = "../../../../Desktop/RentingLand 3/RentingLand/Header/MenubarHeaderView.xib"; sourceTree = "<group>"; };
+		A335E34C29F8F0D100FDCA8F /* MenuBarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuBarTableViewCell.swift; path = "../../../../Desktop/RentingLand 3/RentingLand/TableViewCellFolder/MenuBarTableViewCell.swift"; sourceTree = "<group>"; };
+		A335E34D29F8F0D100FDCA8F /* MenuBarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuBarTableViewCell.xib; path = "../../../../Desktop/RentingLand 3/RentingLand/TableViewCellFolder/MenuBarTableViewCell.xib"; sourceTree = "<group>"; };
+		A335E35029F8F1A500FDCA8F /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		A335E35229F91F5A00FDCA8F /* RentAgreementFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentAgreementFormViewController.swift; sourceTree = "<group>"; };
+		A335E35429F932A800FDCA8F /* AgreementPropertDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementPropertDetailViewController.swift; sourceTree = "<group>"; };
 		A36DCDE029F116BA0055AF00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A36DCDE629F119150055AF00 /* ExploreLandsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreLandsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A36DCDE729F119150055AF00 /* ExploreLandsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreLandsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -376,6 +390,9 @@
 				047D568129F3CD5600DD1CB6 /* DetailViewController.swift */,
 				A3B3A36429F68D5400A8C1ED /* SearchLocationViewController.swift */,
 				A3B3A36629F692E100A8C1ED /* RentAgreementViewController.swift */,
+				A335E35029F8F1A500FDCA8F /* SlideMenuViewController.swift */,
+				A335E35229F91F5A00FDCA8F /* RentAgreementFormViewController.swift */,
+				A335E35429F932A800FDCA8F /* AgreementPropertDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -401,6 +418,8 @@
 			isa = PBXGroup;
 			children = (
 				A36DCDEE29F11D490055AF00 /* ExploreLandTableViewCell.swift */,
+				A335E34C29F8F0D100FDCA8F /* MenuBarTableViewCell.swift */,
+				A335E34D29F8F0D100FDCA8F /* MenuBarTableViewCell.xib */,
 				A36DCDEF29F11D490055AF00 /* ExploreLandTableViewCell.xib */,
 				A36DCDF229F11D6F0055AF00 /* LandForRentTableViewCell.swift */,
 				A36DCDF329F11D6F0055AF00 /* LandForRentTableViewCell.xib */,
@@ -421,8 +440,10 @@
 		A36DCDF629F13EF10055AF00 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				A36DCDF729F13F080055AF00 /* CostomHeaderView.swift */,
 				A36DCDF829F13F080055AF00 /* CostomHeaderView.xib */,
+				A36DCDF729F13F080055AF00 /* CostomHeaderView.swift */,
+				A335E34829F8F0A200FDCA8F /* MenubarHeaderView.swift */,
+				A335E34929F8F0A200FDCA8F /* MenubarHeaderView.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -553,12 +574,14 @@
 				A30D2EAE29F63FE30060C921 /* PageControllerCollectionViewCell.xib in Resources */,
 				A37B2F3C29F8089400146126 /* SearchTableViewCellTableViewCell.xib in Resources */,
 				A37B2F3829F8087800146126 /* AddLocationNameTableViewCell.xib in Resources */,
+				A335E34F29F8F0D100FDCA8F /* MenuBarTableViewCell.xib in Resources */,
 				A31572B829EFB4060008756E /* Assets.xcassets in Resources */,
 				A31572B629EFB4040008756E /* Main.storyboard in Resources */,
 				A36DCDED29F11AF30055AF00 /* LandForRentCollectionViewCell.xib in Resources */,
 				A37B2F4129F8089E00146126 /* TypeOfLocationTableViewCell.xib in Resources */,
 				A36DCDF529F11D6F0055AF00 /* LandForRentTableViewCell.xib in Resources */,
 				A36DCDF129F11D490055AF00 /* ExploreLandTableViewCell.xib in Resources */,
+				A335E34B29F8F0A200FDCA8F /* MenubarHeaderView.xib in Resources */,
 				A3FE604D29F25A3600CE42CC /* WishlistTableViewCell.xib in Resources */,
 				A36DCDFA29F13F080055AF00 /* CostomHeaderView.xib in Resources */,
 				A37B2F4929F808B400146126 /* TypeOfLandCollectionViewCell.xib in Resources */,
@@ -617,6 +640,8 @@
 			files = (
 				047D568E29F3DB9600DD1CB6 /* UIImage+Gif.swift in Sources */,
 				047D568829F3DB3300DD1CB6 /* AppUtility.swift in Sources */,
+				A335E34E29F8F0D100FDCA8F /* MenuBarTableViewCell.swift in Sources */,
+				A335E35529F932A800FDCA8F /* AgreementPropertDetailViewController.swift in Sources */,
 				A36DCDF029F11D490055AF00 /* ExploreLandTableViewCell.swift in Sources */,
 				A36DCDF429F11D6F0055AF00 /* LandForRentTableViewCell.swift in Sources */,
 				A37B2F3D29F8089400146126 /* SearchTableViewCellTableViewCell.swift in Sources */,
@@ -626,6 +651,9 @@
 				A30D2EAD29F63FE30060C921 /* PageControllerCollectionViewCell.swift in Sources */,
 				A37B2F4029F8089E00146126 /* TypeOfLocationTableViewCell.swift in Sources */,
 				047D569029F3DB9E00DD1CB6 /* UIView+Constraints.swift in Sources */,
+				A335E34A29F8F0A200FDCA8F /* MenubarHeaderView.swift in Sources */,
+				A335E35129F8F1A500FDCA8F /* SlideMenuViewController.swift in Sources */,
+				A335E35329F91F5A00FDCA8F /* RentAgreementFormViewController.swift in Sources */,
 				A3FE604C29F25A3600CE42CC /* WishlistTableViewCell.swift in Sources */,
 				047D568229F3CD5600DD1CB6 /* DetailViewController.swift in Sources */,
 				A3FE605129F2639900CE42CC /* WishlistViewController.swift in Sources */,

@@ -15,13 +15,13 @@
 //                hud = MBProgressHUD.showAdded(to: window, animated: true)
 //            }
 //        }
-//        
+//
 //        hud?.bezelView.color = UIColor.black.withAlphaComponent(0.4)
 //        hud?.bezelView.style = .solidColor
 //        hud?.label.textColor = UIColor.black
 //        hud?.contentColor = .white
 //        hud?.backgroundColor = UIColor.black.withAlphaComponent(0.1)
-//        
+//
 //        if let ttt = title,title != nil {
 //            hud!.label.text = ttt
 //        }
@@ -38,44 +38,44 @@
 //            }
 //        }
 //    }
-//    
+//
 //    class func showAlertWithProperty(_ title: String, messageString: String) {
 //        let alertController = UIAlertController.init(title: title, message: messageString, preferredStyle: .alert)
 //        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
 //        UIApplication.topViewController()?.present(alertController, animated: true, completion: nil)
 //    }
-//    
+//
 //    class func isValidEmail(email: String) -> Bool {
 //        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-//        
+//
 //        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
 //        return emailTest.evaluate(with: email)
 //    }
-//    
+//
 //    class func hasNoSpecialCharacter(text: String) -> Bool {
 //        let specialRegEx = "\\p{L}+(?:[\\W_]\\p{L}+)*"
-//        
+//
 //        let stringTest = NSPredicate(format:"SELF MATCHES %@", specialRegEx)
 //        return stringTest.evaluate(with: text)
 //    }
-//    
+//
 //    class func isStrongPassword(text: String) -> Bool {
 //       // let regex = "(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@\\$%^&*-]).{8,}"
-//        
+//
 //         let regex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$"
-//        
+//
 //        let stringTest = NSPredicate(format:"SELF MATCHES %@", regex)
 //        return stringTest.evaluate(with: text)
 //    }
-//    
+//
 //    class func isValidPhone(phone: String) -> Bool {
 //                   let PHONE_REGEX = "^[0-9+]{0,1}+[0-9]{5,16}$"
 //                  let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
 //                  let result = phoneTest.evaluate(with: phone)
 //                  return result
-//            
+//
 //    }
-//    
+//
 //    static func getPhoneWithCountryCode(value: String) -> String {
 //        if value.count >= 10 {
 //            let finalValue = value.suffix(10)
@@ -83,7 +83,7 @@
 //        }
 //        return ""
 //    }
-//    
+//
 //    static func convertToDictionary(text: String) -> [String: Any]? {
 //        if let data = text.data(using: .utf8) {
 //            do {
@@ -94,15 +94,15 @@
 //        }
 //        return nil
 //    }
-//    
+//
 //    static func isValidUrl (urlString: String?) -> Bool {
 //        if let urlString = urlString, let url = URL(string: urlString) {
 //            return UIApplication.shared.canOpenURL(url)
 //        }
 //        return false
 //    }
-//    
-//    
+//
+//
 //}
 //
 //extension AppUtility{
@@ -139,7 +139,7 @@
 //
 //extension UIViewController{
 //
-//  
+//
 //    func dismissMe(animated: Bool, completion: (()->())?) {
 //        var count = 0
 //        if let c = self.navigationController?.viewControllers.count {
@@ -154,15 +154,15 @@
 //            dismiss(animated: animated, completion: completion)
 //        }
 //    }
-//    
-//    
-//    
+//
+//
+//
 //    func showAlertMessage(titleStr:String, messageStr:String) {
 //        let alert = UIAlertController(title: titleStr, message: messageStr, preferredStyle: UIAlertController.Style.alert)
 //        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
 //        self.present(alert, animated: true, completion: nil)
 //    }
-//    
+//
 //    public func setNavigationBar( hide: Bool,view:String) {
 //    navigationController?.setNavigationBarHidden(hide, animated: true)
 //    self.navigationController?.navigationBar.topItem?.title = view
@@ -171,32 +171,32 @@
 //    self.navigationController?.navigationBar.isTranslucent = false
 //    UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
 //    }
-//    
-//    
+//
+//
 //    func showAlert(){
 //            let alert = UIAlertController(title: "No Internet", message: "This App Requires wifi/internet connection", preferredStyle: .alert)
 //
 //               // let cancelButton = UIAlertAction(title: "cancel", style: .cancel){(action) in}
 //                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 //
-//            
+//
 //            self.present(alert, animated: true, completion: nil)
-//            
+//
 //        }
-//    
-//    
-//    
+//
+//
+//
 //    func hideKeyboardWhenTappedAround() {
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
 //        tap.cancelsTouchesInView = false
 //        view.addGestureRecognizer(tap)
 //    }
-//    
+//
 //    @objc func dismissKeyboard() {
 //        view.endEditing(true)
 //    }
-//    
-//    
+//
+//
 ////    func callForTokenExpire(msg: String){
 ////        let alert = UIAlertController(title: "", message: msg, preferredStyle: .alert)
 ////                     let ok = UIAlertAction(title: "OK", style: .default, handler: { action in
@@ -212,7 +212,7 @@
 ////
 ////
 ////     }
-//    
+//
 //}
 //extension UIWindow {
 //    static var key: UIWindow? {
@@ -224,12 +224,12 @@
 //    }
 //}
 //
-
-
-    
-
-
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
